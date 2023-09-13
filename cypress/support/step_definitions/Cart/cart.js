@@ -17,7 +17,7 @@ When("I view my cart", () => {
 Then("I find total four items listed in my cart", () => {
     cy.get('.shop_table.shop_table_responsive.cart >tbody >tr').then((element) => {
         const expectedLength = element.length - 1;
-        cy.wrap(expectedLength).should("eq", 2);
+        cy.wrap(expectedLength).should("eq", 4);
     });
 });
 
@@ -32,7 +32,7 @@ And("I am able to remove the lowest price item from my cart", () => {
 Then("I am able to verify three items in my cart", () => {
     cy.get('.shop_table.shop_table_responsive.cart >tbody >tr').then((element) => {
         const expectedLength = element.length - 1;
-        cy.wrap(expectedLength).should("eq", 1);
+        cy.wrap(expectedLength).should("eq", 3);
 
     });
 });
