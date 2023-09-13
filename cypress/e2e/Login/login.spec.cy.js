@@ -1,6 +1,6 @@
-import loginPage from '../../pageobjects/loginPage'
-import homePage from '../../pageobjects/homePage'
-import billPage from '../../pageobjects/billPaymentPage'
+import loginPage from '../../support/pageobjects/loginPage'
+import homePage from '../../support/pageobjects/homePage'
+import billPage from '../../support/pageobjects/billPaymentPage'
 
 describe("Login Parabank", () => {
     let fixtureData;

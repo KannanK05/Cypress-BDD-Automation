@@ -33,6 +33,6 @@ describe("Petstore request", () => {
         expect(response).to.have.property("headers");
         
       });
-      cy.log("@resp");
+      
     });
   });
