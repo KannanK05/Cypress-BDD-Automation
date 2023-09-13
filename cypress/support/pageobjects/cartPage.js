@@ -3,7 +3,7 @@ class CartPage {
     addToCart() {
         cy.get('.product >.ellie-thumb-wrapper > .button').then(($element) => {
             const selectedIndices = [];
-            while (selectedIndices.length < 2) {
+            while (selectedIndices.length < 4) {
                 const randomIndex = Math.floor(Math.random() * $element.length);
                 if (!selectedIndices.includes(randomIndex)) {
                     selectedIndices.push(randomIndex);
